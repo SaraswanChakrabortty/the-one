@@ -73,14 +73,15 @@ read c
 clear
 if [ `expr $c` == Y ] || [ `expr $c` == y ]
 then
-	sudo apt-get install python python3 -y 
+	sudo apt-get install python python3 python3-pip -y 
 	sleep 2
 	clear
 	echo
-	echo "2 Pakages installed:"
+	echo "3 Pakages installed:"
 	echo
 	echo "1. python(Interpreter for python2)"
 	echo "2. python3(Interpreter for pyhton3)"
+	echo "3. python3-pip(pip package maneger for python3)"
 	echo
 fi
 echo -n "Are you on Gnome desktop environment ? Press Y[Yes] or N[No] and Enter: "
